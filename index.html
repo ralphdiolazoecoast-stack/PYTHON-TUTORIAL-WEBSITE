@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Tutorial</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #306998;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #ffd43b;
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #306998;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        code {
+            background: #eeeeee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 18px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .tip {
+            background: #e8f4ff;
+            border-left: 5px solid #306998;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .activity {
+            background: #fff8dc;
+            border-left: 5px solid #ffd43b;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .compiler-container {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
+        }
+
+        footer {
+            background: #306998;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            iframe {
+                height: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Python Programming Tutorial</h1>
+        <p>Learn the basics of Python programming step by step</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#variables">Variables</a>
+        <a href="#conditions">Conditions</a>
+        <a href="#loops">Loops</a>
+        <a href="#compiler">Online Compiler</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card" id="introduction">
+            <h2>1. Introduction to Python</h2>
+
+            <p>
+                Python is a high-level programming language that is simple,
+                readable, and easy to learn. It is commonly used for web
+                development, automation, data analysis, and artificial
+                intelligence.
+            </p>
+
+            <h3>First Python Program</h3>
+
+            <pre>print("Hello, World!")</pre>
+
+            <p>
+                The <code>print()</code> function is used to display text or
+                information on the screen.
+            </p>
+
+            <div class="tip">
+                <strong>Tip:</strong> Python uses indentation to organize
+                blocks of code.
+            </div>
+        </section>
+
+
+        <section class="card" id="variables">
+            <h2>2. Variables</h2>
+
+            <p>
+                Variables are used to store information in a program.
+                Python can store different types of data such as text and
+                numbers.
+            </p>
+
+            <pre>name = "Ralph"
+age = 18
+
+print(name)
+print(age)</pre>
+
+            <p>
+                In this example, <code>name</code> stores text and
+                <code>age</code> stores a number.
+            </p>
+
+            <div class="activity">
+                <strong>Try it:</strong> Change the name and age in the
+                example and run the program.
+            </div>
+        </section>
+
+
+        <section class="card" id="conditions">
+            <h2>3. Conditional Statements</h2>
+
+            <p>
+                Conditional statements allow a program to make decisions
+                based on a condition.
+            </p>
+
+            <pre>age = 18
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</pre>
+
+            <p>
+                The <code>if</code> statement checks whether a condition is
+                true. If the condition is false, the <code>else</code>
+                statement runs.
+            </p>
+
+            <div class="tip">
+                <strong>Remember:</strong> Python uses a colon and indentation
+                after an <code>if</code> or <code>else</code> statement.
+            </div>
+        </section>
+
+
+        <section class="card" id="loops">
+            <h2>4. Loops</h2>
+
+            <p>
+                Loops are used when you want to repeat a block of code.
+            </p>
+
+            <h3>For Loop Example</h3>
+
+            <pre>for i in range(5):
+    print(i)</pre>
+
+            <p>
+                This program prints the numbers from 0 to 4.
+            </p>
+
+            <h3>Another Example</h3>
+
+            <pre>for i in range(1, 6):
+    print("Python", i)</pre>
+
+            <p>
+                This example repeats the statement five times.
+            </p>
+        </section>
+
+
+        <section class="card" id="compiler">
+            <h2>5. Try Python Online</h2>
+
+            <p>
+                You can practice Python directly below using the embedded
+                online Python compiler.
+            </p>
+
+            <div class="compiler-container">
+
+                <iframe
+                    src="https://www.online-python.com/"
+                    title="Online Python Compiler"
+                    allow="clipboard-write">
+                </iframe>
+
+            </div>
+
+            <div class="activity">
+                <strong>Activity:</strong>
+                Try changing the code in the compiler. Create a program that
+                displays your name, age, and favorite hobby.
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>6. Simple Python Challenge</h2>
+
+            <p>
+                Try to create a Python program that displays the following:
+            </p>
+
+            <pre>Name: Ralph
+Age: 18
+Hobby: Watching Racing</pre>
+
+            <p>
+                You can use the <code>print()</code> function to complete
+                this activity.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Python Programming Tutorial</p>
+        <p>Created for a Web Development Activity</p>
+    </footer>
+
+</body>
+</html>
